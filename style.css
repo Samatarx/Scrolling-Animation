@@ -83,5 +83,6 @@ footer a:visited {
   .container {
     max-width: 100vw;
     overflow-x: hidden;
+    margin: 0 auto;
   }
 }
