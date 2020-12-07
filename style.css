@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #B89685;
+  background-color: #000000;
   font-family: "JetBrains", sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,12 @@ body {
 
 h1 {
   margin: 10px;
+  color: #d00000;
 }
 
 .box {
-  background-color:#BFADA3;
-  color: #250001;
+  background-color:#d00000;
+  color: #fff;
   /* Centres everything inside the boxes */
   display: flex;
   align-items: center;
@@ -40,6 +41,8 @@ h1 {
 /* By selecting the nth box we can create the alternating effect */
 .box:nth-of-type(even) {
   transform: translateX(-400%);
+  background-color: #fff;
+  color: #d10000;
 }
 
 /* Once the show property is added with JS the box returns to its original position */
@@ -51,8 +54,13 @@ h1 {
   font-size: 45px;
 }
 
+.box:hover {
+  background-color: #ffba08;
+  color: #000;
+}
+
 footer {
-  color: #e28413;
+  color: #d10000;
   margin: 10px;
   text-align: center;
   padding: 20px;
@@ -60,7 +68,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #e28413;
+  color: #d10000;
 }
 
 footer a:hover {
@@ -68,5 +76,5 @@ footer a:hover {
 }
 
 footer a:visited {
-  color: #e28413;
+  color: #d10000;
 }
