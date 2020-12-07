@@ -18,6 +18,7 @@ body {
 h1 {
   margin: 10px;
   color: #d00000;
+  text-align: center;
 }
 
 .box {
@@ -77,6 +78,11 @@ footer a:hover {
 
 footer a:visited {
   color: #d10000;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
 }
 
 @media (max-width: 450px) {
