@@ -34,13 +34,13 @@ h1 {
   margin: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   /* Takes the boxes outside the screen, 400% is used to allow for wider screens */
-  transform: translateX(400%);
+  transform: translateX(500%);
   transition: transform 0.6s ease-in;
 }
 
 /* By selecting the nth box we can create the alternating effect */
 .box:nth-of-type(even) {
-  transform: translateX(-400%);
+  transform: translateX(-500%);
   background-color: #fff;
   color: #d10000;
 }
