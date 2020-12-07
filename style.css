@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #B89685;
+  font-family: "JetBrains", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.box {
+  background-color:#BFADA3;
+  color: #250001;
+  /* Centres everything inside the boxes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Defines the dimensions of the boxes */
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  /* Takes the boxes outside the screen, 400% is used to allow for wider screens */
+  transform: translateX(400%);
+  transition: transform 0.6s ease-in;
+}
+
+/* By selecting the nth box we can create the alternating effect */
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+/* Once the show property is added with JS the box returns to its original position */
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
+
+footer {
+  color: #e28413;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e28413;
+}
+
+footer a:hover {
+  color: #fbf5f3 !important;
+}
+
+footer a:visited {
+  color: #e28413;
+}
